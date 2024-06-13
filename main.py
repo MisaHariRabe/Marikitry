@@ -7,7 +7,7 @@ app = Flask(__name__)
 """DEFINITION DES ROUTES DE L'APPLICATION"""
 @app.route("/")
 def welcome():
-    return "<h1>Hello</h1>"
+    return render_template("index.html")
 
 
 """DEMARRAGE DE L'APPLICATION"""
